@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Smart Site Again</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+        <script src="//unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="logoDiv">
+            <h1> <span> <img id="Icon"src="icon.png"></span> Smart Site Again</h1>
+            <hr>
+        </div>
+        
+        <div id="mainDiv">
+            <p id="informationText">Me when old style. The model was trained to see this objects:</p>
+            <h3  id="list">
+                Paper<br>
+                Coca can<br>
+                Mouse<br>
+            </h3>
+            <h4 class="decorationText"> Vizualization:</h4>
+            <div id="camera" class="div"></div>
+            <br>
+            <hr>
+            <h4 class="decorationText"> Result:</h4>
+            <div id="result" class="div"></div>
+            <button class="buttons" onclick="capture()"> Capture Image</button><br><br>
+            <button class="buttons" onclick="indentify()"> Identify Image</button>
+            <p class="informationsObject"> Object: <span id="objectResult"></span> </p>
+            <p class="informationsObject"> Precision: <span id="precisionResult"></span></p>
+        </div>
+        <div id="created">
+            <hr>
+            <h5> Created by: FoxxIgor</h5>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
